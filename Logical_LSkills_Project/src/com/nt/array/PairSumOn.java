@@ -9,8 +9,9 @@ public class PairSumOn {
 		int[] arr = {1,2,3,0,-1,4,-2};
 		//o/p {1,2} {3,0} {4,-1}
 		int sum =3;
-		findPairsWithSum(arr,sum);
+		//findPairsWithSum(arr,sum);
 	
+		String pair  = Math.min(1,0)+","+Math.max(3,4);System.out.println(pair);
 	}
 	 public static void findPairsWithSum(int[] arr, int targetSum) {
 		  HashMap<Integer, Integer>	 numsCount = new HashMap<>();

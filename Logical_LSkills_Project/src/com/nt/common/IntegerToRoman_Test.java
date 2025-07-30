@@ -3,14 +3,15 @@ package com.nt.common;
 public class IntegerToRoman_Test {
 
 	public static void main(String[] args) {
-		System.out.println(getIntToRoman(39));//XXXIX
+		/*System.out.println(getIntToRoman(39));//XXXIX
 		System.out.println(getIntToRoman(49));//XLIX
 		System.out.println(getIntToRoman(46));
 		System.out.println(getIntToRoman(51));//LI
-		//System.out.println(getIntToRoman(50));//L
+		*/		//System.out.println(getIntToRoman(50));//L
 		//System.out.println(getIntToRoman(1000));//M
 		//System.out.println(getIntToRoman(550));//DL
 
+		System.out.println(getIntToRoman(150));
 	}
 	
 	public static String getIntToRoman(int num) {

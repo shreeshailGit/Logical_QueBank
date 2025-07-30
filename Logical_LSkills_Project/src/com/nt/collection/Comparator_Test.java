@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Comparator_Test {
 
@@ -27,7 +30,13 @@ public class Comparator_Test {
         for (int i = 0; i < students.size(); i++)
             System.out.println(students.get(i));
       	
-	}
+        
+        String str  = "shreeshail12345";
+        System.err.println(str.length());
+        Random random = new Random();
+        String collect = Stream.generate(() ->  String.valueOf(str.charAt(random.nextInt(str.length())))).limit(6).collect(Collectors.joining());
+	System.out.println(collect);
+	}//main
 }
 
 class SortByRoll implements Comparator<Student>{
