@@ -1,6 +1,7 @@
 package com.nt.stream;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -18,6 +19,17 @@ public class Predicate_Test {
 		Predicate<String>  filterCity = city -> city.equals("Mumbai");
 		
 		cities.stream().filter(filterCity).forEach(System.out::print);
+		
+		//Example 2
+		  List<String> names = Arrays.asList("John", "Jane", "Mark", "Steve", "Mary");
+
+	        // Predicate to check if a name starts with 'J'
+	        Predicate<String> startsWithJ = name -> name.startsWith("J");
+
+	        // Filtering and printing names that start with 'J'
+	        names.stream()
+	             .filter(startsWithJ)
+	             .forEach(System.out::println);
 		
 	}
 

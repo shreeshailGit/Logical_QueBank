@@ -25,11 +25,7 @@ public class OccrenceOf_Character_Test {
 		//    .forEach((k, v) -> System.out.println("'" + k + "' = " + v));
 		 
 		 System.out.println(collect);	
-		 
-		 //output has key wise ascedning order
-		 TreeMap<Character, Long> sortedMap = words.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(), TreeMap :: new, Collectors.counting())); 
-		 System.out.println(sortedMap);
-		 
+		  
 		    //OR
 		 Map<Character,Long>  sortedByKey = new TreeMap(collect);
 		 System.out.println(sortedByKey);
